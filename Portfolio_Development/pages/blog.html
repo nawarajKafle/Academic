@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLOG</title>
+	<meta name="description" content="Blog page"/>
+	<meta name="author" content="Nawaraj Kafle"/>
+	<!--linking external css for this page-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--This is the internal css for this page-->
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		.bg
+		{
+			/* The image used for parallax*/
+			background-image: url("../images/grey.jpg");
+			width: 100%;
+			height: 600px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.bg1
+		{
+			background-image: url("../images/grey.jpg");
+			width: 100%;
+			height: 3450px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/*to make flex boxes*/
+		.flex
+		{
+			background-color: transparent;
+			display: flex;
+			flex-wrap: nowrap;
+			line-height: 200px;
+		}
+		/* style for div inside flex boxes*/
+		.flex > div
+		{
+			background-color: #fff;
+			width: 100%;
+			height: 900px;
+			color: #fff;
+			text-align: justify;
+			line-height: 30px;
+			font-size: 20px;
+			margin-top: 100px;
+			margin-right: 40px;
+			margin-left: 50px;
+			padding-left: 20px;
+		}
+		ul 
+		{
+			list-style-type: none;
+			margin: 10px;
+			padding: 2px;px;
+			width: 300px;
+			height: 400px;
+			line-height: 30px;
+			margin-left: 0px;
+		}
+
+		li a 
+		{
+			display: block;
+			color: #000000;
+			padding: 20px 30px;
+			text-decoration: none;
+		}
+
+		/* Change the link color on hover */
+		li a:hover {
+			background-color: #555;
+			color: #fff;
+		</style>
+	</head>
+	<body>
+		<!--for wrapper class-->
+		<div style="max-width: 100%; height: 600px;">
+			<header style=" background-color: #c0c6c8; width: 100%; height: 45px; position: fixed; z-index: 1;">
+				<!--for navigation bar-->
+				<nav class="navi">
+					<table style="width: 95%; margin: 0px;">
+						<tr>
+							<th>
+								<a href="../index.html">Home</a>
+							</th>
+							<th>
+								<a href="cv.html">CV</a>
+							</th>
+							<th>
+								<a style="color: #848484" href="blog.html">Blog</a>
+							</th>
+							<th> 
+								<a href="research.html">Research</a>
+							</th>
+							<th>
+								<a href="contact.html">Contact Us</a>
+							</th>
+						</tr>
+					</table>
+				</nav>
+			</header>
+			<div class="bg">
+				<img id="img" src="../images/tech.png" style="margin-left: 500px; margin-top: 100px; margin-right: 20px; width: 900px; height: 500px;">
+				<h1 style="font-family: verdana; color: #000000; text-align: center;padding-top:30px; padding-left: 400px; padding-right: 20px;">Impact of internet technology in daily life</h1>
+			</div>
+			<div style="width: 100%; height: 100%; z-index: 0;">
+				<div class="bg1">
+					<div class="flex">
+						<div style="width: 20%; height: 350px; padding-bottom: 20px; position: fixed; top: 0; box-shadow: #000000 3px 3px 20px;">
+							<!--list is created for naviagtion bar-->
+							<ul>
+								<li><a href="#img">Internet Technology</a></li>
+								<li><a href="#introduction">Introduction</a></li>
+								<li><a href="#positive">Positive impact of internet</a></li>
+								<li><a href="#negative">Negative impact of internet</a></li>
+								<li><a href="#conclusion">Conclusion</a></li>
+							</ul>
+						</div>
+						<div style=" width: 80%; height: 3300px;  margin-left: 500px; box-shadow: #000000 3px 3px 20px;">
+							<div style="width: 100%; height: 750px; padding-top: 40px; line-height: 25px; font-family: verdana; font-size: 18px; 
+							color: #000000; text-align: justify;">
+							<section id="introduction">
+								<br><br>
+								<h3 style="font-family: verdana; padding-left: 40px;">Introduction</h3><br>
+								<p style="padding-right: 60px; padding-left: 40px;"> &emsp;&emsp; The internet is guiding technology of IT Age just as the electrical engine was of the Industrial Age. Internet is the interconnection of millions of nodes around the world using routers and switches that is standardized by the communication protocol. If permission is given, a user at any one computer can get information from another computer from any part of the world easily. The Advanced Research Projects Agency (ARPA) of the U.S government developed the network in 1969 and was known as ARPAnet. Since then the internet is playing a major role in the daily life of the people. Internet is the best place to communicate and share information with people from anywhere on the glove. It also provide endless knowledge and entertainment to the users. Internet consists of diffrent services. They are World Wide Web (WWW), telnet, Voice over Internet Protocol (VoIP), Chat, E-mail and so on. E-mail and other form of communication like Internet Relay Chat (IRC) used to message instantly. But must important services of the internet is WWW. WWW is the graphical interface for the internet. It is what a user views while looking at their browser. Its outstanding feature is hyperlink, a method of instant cross-platform referencing, appears on webpages as hypertext or image which when clicked will redirects user to the referenced webpage. To access the web, users uses the application called browser where all the webpages are located in a group as websites. It has been found that about 95% of all information that are avialable are digitilized and made accessible via search engines with the help of the internet. It has let to a complete transformation in communication, availability of knowledge as well as social interaction.</p>
+							</section><br>
+							<div style="margin-left: 50px; margin right: 50px;">
+								<img src="../images/arpa.png" style="width: 830px; height: 500px;">
+								<figcaption style="padding-left: 50px;">Fig 1- Advance Research Projects Agency Network</figcaption>
+							</div><br>
+							<section id="positive">
+								<br><br>
+								<h3 style="padding-left: 40px;">Positive Impact of the Internet technology</h3><br>
+								<p style="padding-right: 60px; padding-left: 40px;">In daily life, Internet has following positive impacts:</p>
+								<br>
+								<h4 style="padding-left: 40px;">Communication with family, friends and relatives is faster</h4> <br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; Internet is very convinet way to comminucate with family and friends. Internet has the services like IRC and E-mail, video confrence which helps to connect with the people at a distant palce. Kids can talk to their parents after moving to another place using Skype. Not only that, images, audio and videos also can be shared using internet.
+								</p>
+								<br>
+								<h4 style="padding-left: 40px;">Faster business transactions and cheaper products</h4><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; Now-a-days, most of the business are operated electronically. The things which are required can be ordered online via internet. The transactions are also secure and faster. Sellers uses websites to interact with their costumer which is very relaible. 
+								</p>
+								<br><br>
+								<h4 style="padding-left: 40px;">Great possibility to earn while from home</h4><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; It is possible to earn money working from home. Many free lancers are earning good amount of money working for others without even going to office. People are also earning by making videos, writing blogs, animations etc. by the help of adsense and other diffrent sponsers which provide them money for advertising their contents. 
+								</p>
+								<br><br>
+								<h4 style="padding-left: 40px;">It is easier to do research</h4><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; Students now not have to depend upon libraries and other physical materials for their research. They can now easily search for their subject of research in search engines. There are lots of resources avilable in internet which can be accssed using less money or no money at all. 
+								</p>
+							</section>
+							<br><br><br>
+							<section id="negative">
+								<br><br>
+								<h3 style="padding-left: 40px;">Negative Impact of the Internet technology</h3><br>
+								<p style="padding-right: 60px; padding-left: 40px;"> Though internet has many positive impacts but that doesn't mean it have no negative impacts. There are number of negative impacts of internet which are given below:</p>
+								<br><br>
+								<h4 style="padding-left: 40px;">Cyber crime and harassments</h4> <br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; Social media is  the place where people are selling their privacy without even concerning about it. Many hackers use some illigal hacking skills to access the private information of the people and blackmail them for money. Bullies and harassment are also common in internet which leads to other crimes too.
+								</p>
+								<br><br>
+								<h4 style="padding-left: 40px;">Loss of human touch</h4><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; People now are more focused in online life more than their real life. This is making the gap between the people. People have forgotten to interact with their families and only interact with thier online friends. People have no any attention of the surrounding while they are on their phones. 
+								</p>
+								<br><br>
+								<h4 style="padding-left: 40px;">Pornography is not hard to access</h4><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp; Anybody on the internet can upload pronographic content for commercial purpose or for just fun. The porn websites are accessed by the kids who are under-age using fake accounts which can have some negative impact to the society. Many people are blackmailed using their sexual videos and photos. This probably is the most negative impact of the internet. 
+								</p>
+							</section>
+							<br><br>
+							<section id="conclusion">
+								<h3 style="font-family: verdana; padding-left: 40px;">Conclusion</h3><br>
+								<p style="padding-right: 60px; padding-left: 40px;">&emsp;&emsp;In the conclusion, Internet is the outstanding invention of the modern day. Considering impacts of the internet to the people can be both be positive nad negative. Internet should be managed for the overall benifit of the mankind. The concerns regarding internet should be taken serious. There should be advance cyber security for the protection of one's data and privacy. If this concern is erridicated from  the society, internet will bring many unexpected great things.
+								</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!--for footer-->			
+		<footer class="footer">
+			&copy;Nawaraj Kafle | All Rights Reserved. 
+		</footer>
+	</body>
+	</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Research</title>
+	<meta name="description" content="Research page"/>
+	<meta name="author" content="Nawaraj Kafle"/>
+	<!--linking external css for this page-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--This is the internal css for this page-->
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		.bg
+		{
+			/* The image used */
+			background-image: url("../images/bgimg.png");
+			width: 100%;
+			height: 3800px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/*to make flex boxes*/
+		.flex
+		{
+			background-color: transparent;
+			display: flex;
+			flex-wrap: nowrap;
+			line-height: 1000px;
+		}
+		/* style for div inside flex boxes*/
+		.flex > div
+		{
+			background-color: #fff;
+			width: 50%;
+			height: 600px;
+			color: #000000;
+			text-align: left;
+			line-height: 30px;
+			font-size: 25px;
+			margin-top: 100px;
+			margin-right: 40px;
+			margin-left: 50px;
+			padding-left: 20px;
+			box-shadow: 3px 3px 20px #000000;
+		}
+		img
+		{
+		width: 670px;
+    	height: 300px;
+    	margin-left: -20px;
+		}
+		.photos
+		{
+			width: 700px;
+			height: 500px;
+			margin-left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<!--for wrapper class-->
+	<div style="max-width: 100%; height: 600px;">
+		<header style=" background-color: #c0c6c8; width: 100%; height: 45px; position: fixed; z-index: 1;">
+			<!--for navigation bar-->
+			<nav class="navi">
+				<table style="width: 95%; margin: 0px;">
+					<tr>
+						<th>
+							<a href="../index.html">Home</a>
+						</th>
+						<th>
+							<a href="cv.html">CV</a>
+						</th>
+						<th>
+							<a href="blog.html">Blog</a>
+						</th>
+						<th> 
+							<a style="color: #848484" href="research.html">Research</a>
+						</th>
+						<th>
+							<a href="contact.html">Contact Us</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		</header>
+		<div class="bg">
+			<div style="width: 100%; height: 100%; z-index: 0;">
+				<p style="color: #000000; font-family: verdana; font-size: 75px; padding-top: 75px; padding-left: 400px; padding-right: 300px;">Research Section</p><p style="color: #00000; font-family: verdana; font-size: 30px; padding-top: 40px; padding-left: 150px; padding-right: 150px;">Here, the website is compared with different expects of researched websites.</p>
+				<div class="flex">
+					<div class="photos">
+						<img src="../images/homepage 1.png">
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This website has parallex effect. Same image is used to make smooth scrolling effect. The background does not response when pointer is hovered inside the webpage. The background image used is not animating.
+						</p>
+					</div>
+					<div>
+						<!--for image hyperlink-->
+						<a href="https://dogstudio.co/">
+							<img src="../images/their homepage.png">
+						</a>
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This website has parallex effect. Diffrent images is used to make smooth scrolling effect. The background response when pointer is hovered inside the webpage. The background image used is animating.
+						</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="photos">
+						<img src="../images/my alert.png">
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This website has a pop-up feature to validate the form. The pop-up is shown for every possible condition for the form validation. This feature helps the website visitor to fill up the form correctly with out leaving required fields.
+						</p>
+					</div>
+					<div class="photos">
+						<!--for image hyperlink-->
+						<a href="https://www.mirror.co.uk/">
+							<img src="../images/their alert.png">
+						</a>
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This website has a pop-up feature to show the notification to the website visitors. This will allows the visitors to update themself with the content of the website.
+						</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div class="photos">
+						<!--for image hyperlink-->
+						<img src="../images/Capture1.png">
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							There is a form in this website which allows the visitors to give some suggestions and feedback about the website. There is a image of map showing the authors location. The image here is made hyperlink, which when clicked will redirect the visitors to the google map.
+						</p>
+					</div>
+					<div class="photos">
+						<!--for image hyperlink-->
+						<a href="https://islington.edu.np/contact/">
+							<img src="../images/Capture.png">
+						</a>
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							There is a form in this website which allows the visitor to clear their queries about the college. There is a map section which shows the location of the college. This is not just a image of map but a real map was embeded in the website.
+						</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div>
+						<img src="../images/my nav.png">
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							The nivigation bar in this website was inspired by the website given along side. The overall structure was made same but the background and font color is changed to match background image. 
+						</p>
+					</div>
+					<div class="photos">
+						<!--for image hyperlink-->
+						<a href="https://www.apple.com/">
+							<img src="../images/their nav.png">
+						</a>
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This navigation bar has a search bar which helps the visitors to search desired result using simple key woed. The overall structure of this website's naviagtion bar is eye pleasing.
+						</p>
+					</div>
+				</div>
+				<div class="flex">
+					<div>
+						<img src="../images/my side.png">
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This side navigation bar is used to jump to the diffrent section of the blog. This is the simple side naviagtion bar with grey background on hover.There is no navigation for sub-heading in this navigation bar.
+						</p>
+					</div>
+					<div class="photos">
+						<a href="https://www.britannica.com/topic/information-system">
+							<img src="../images/their side.png">
+						</a>
+						<p style="padding-right: 15px; font-family: verdana; text-align: justify;">
+							This side navigation bar is used also used to jump to the diffrent section of the blog but with most prescision. There are sub-heading to search exactly to the desired section easily.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>				
+	<footer class="footer">
+		&copy;Nawaraj Kafle | All Rights Reserved.
+	</footer>
+</body>
+</html>

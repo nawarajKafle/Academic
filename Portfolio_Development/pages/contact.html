@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="description" content="contact page"/>
+	<meta name="author" content="Nawaraj Kafle"/>
+	<!--linking external css for this page-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--This is the internal css for this page-->
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		.bg
+		{
+			/* The image used */
+			background-image: url("../images/bgimg1.png");
+			width: 100%;
+			height: 1000px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/*to make flex boxes*/
+		.flex
+		{
+			background-color: transparent;
+			display: flex;
+			flex-wrap: nowrap;
+			line-height: 1000px;
+		}
+		/* style for div inside flex boxes*/
+		.flex > div
+		{
+			background-color: #fff;
+			width: 100%;
+			height: 900px;
+			color: #000000;
+			text-align: left;
+			line-height: 30px;
+			font-size: 25px;
+			margin-top: 100px;
+			margin-right: 40px;
+			margin-left: 50px;
+			padding-left: 20px;
+			box-shadow: 3px 3px 20px;
+		}
+		.inp
+		{
+			width: 300px;
+			height: 20px;
+		}
+		/*style for button*/
+		.button
+		{
+			text-decoration: none;
+			color: #fff;
+			background-color: #000000;
+			width: 200px;
+			height: 50px;
+			border: 4px solid #fff;
+			text-align: center;
+			font-family: bold 15px sans-serif;
+			transition: all 0.4s ease 0s;
+		}
+		/* to change colour while hovered*/
+		.button:hover 
+		{
+			color: #ffffff;
+			background: #f6b93b;
+			border-color: #f6b93b;
+			transition: all 0.4s ease 0s;
+		}
+		img
+		{
+			width: 500px;
+			height: 350px;
+			margin-top: 10px;
+			margin-left: -10px;
+		}
+		/*for unordered list*/
+		ul
+		{
+			float: left;
+			list-style-type: none;
+			margin-left: 125px;
+			width: 300px;
+			overflow: hidden;
+
+		}
+		li{
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<!--for wrapper class-->
+	<div style="max-width: 100%; height: 600px;">
+		<header style=" background-color: #c0c6c8; width: 100%; height: 45px; position: fixed; z-index: 1;">
+			<!--for navigation bar-->
+			<nav class="navi">
+				<table style="width: 95%; margin: 0px;">
+					<tr>
+						<th>
+							<a href="../index.html">Home</a>
+						</th>
+						<th>
+							<a href="cv.html">CV</a>
+						</th>
+						<th>
+							<a href="blog.html">Blog</a>
+						</th>
+						<th> 
+							<a href="research.html">Research</a>
+						</th>
+						<th>
+							<a style="color: #848484" href="contact.html">Contact Us</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		</header>
+		<div class="bg">
+			<div style="width: 100%; height: 100%; z-index: 0;">
+				<div class="flex">
+					<div style="width: 40%; height: 500px;">
+						<!-- this will redirect to the google map-->
+						<a href="https://www.google.com/maps/place/Daju+Vai+Hostel/@27.7043744,85.332503,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb199ff4a7449d:0x6da270c63c47e0da!8m2!3d27.7043744!4d85.3346917?" target="_blank">
+							<img src="../images/map.png" alt="map">
+						</a>
+						<p  id="color"style="font-size: 15px; text-align: center; color: #fff; background-color: #000000; margin-left: -20px;">click the image to redirect to the google map.</p>
+						<h5 style="padding-left: 50px;">You can also conatct me on my Social Medias</h5>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/binaya.kafle.14">
+									<img src="../images/facebook.png" alt="facebook" style="width: 60px; height: 60px; ">
+								</a>
+							</li>
+							<li>
+								<a href="instagram.com/x_bi69k/">
+									<img src="../images/instagram.png" alt="instagram" style="width: 70px; height: 60px;">
+								</a>
+							</li>
+						</ul>
+						<!--for dynamically change the color of the text-->
+						<script type="text/javascript">
+							function blink()
+							{
+								var a = document.getElementById("color").style.color;/*gets color from the text*/
+								/* condition for checking color of the text*/
+								if(a=="rgb(255, 255, 255)")
+								{
+									document.getElementById("color").style.color = "#ff0000";
+								}
+
+								else
+								{
+									document.getElementById("color").style.color = "rgb(255, 255, 255)";
+								}
+								setTimeout(blink,500);/*sets the interval for blinking*/
+								
+							}
+							setTimeout(blink,500);
+							
+						</script>
+					</div>
+					<div style="height: 800px; width: 60%; line-height: 75px;">
+						<div style="width: 100%; height: 750px; padding-top: 10px;">
+							<p style="line-height: 35px; font:;">Your feedback is Precious for us. So, stop here to give some feed back. </p>
+							<!--form-->
+							<form style="padding-left: 20px;" name="form1" onsubmit="validateForm()">
+								<p>First name <input class="inp" type="text" name="firstname"></p>
+								<p>Last name <input class="inp" type="text" name="lastname"></p>
+								<p>Suggestions  <br><textarea name="message" rows="20" cols="70" placeholder="Enter Message"></textarea></p>
+								<p><input class="button" type="submit" value="Send"></p>
+							</form>
+							<script>
+								function validateForm()
+								{
+									var fname = document.forms["form1"]["firstname"].value;
+									var lname = document.forms["form1"]["lastname"].value;
+									var message = document.forms["form1"]["message"].value;
+									/*condition for each possible casses of form validation*/
+									if(fname == "" && lname == "" && message == "")
+									{
+										alert("All fields are empty. please fill the form.")
+									}
+									else if(fname == "" && lname == "")
+									{
+										alert("First name and Last name are empty. These fields are required.")
+									}
+									else if(fname == "" && message == "")
+									{
+										alert("First name and message are empty. These fields are required.")
+									}
+									else if(lname == "" && message == "")
+									{
+										alert("Last name and message are empty. These fields are required.")
+									}
+									else if(fname == "")
+									{
+										alert("First name is empty. This feild is required.")
+									}
+									else if(lname == "")
+									{
+										alert("Last name is empty. This field is required.")
+									}
+									else if(message == "")
+									{
+										alert("Message field is empty. This field is required.")
+									}
+									else
+									{
+										alert("Thank you for your feedback.")
+									}
+								}
+							</script>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>	
+		<!--for footer-->			
+		<footer class="footer">
+			&copy;Nawaraj Kafle | All Rights Reserved.
+		</footer>
+	</body>
+	</html>

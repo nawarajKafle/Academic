@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV & Portfolio</title>
+	<meta name="description" content="CV and Portfolio"/>
+	<meta name="author" content="Nawaraj Kafle"/>
+	<!--linking external css for this page-->
+	<link rel="stylesheet" href="../css/style.css">
+	<!--This is the internal css for this page-->
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		.bg
+		{
+			/* The image used */
+			background-image: url(../images/bgimg1.png);
+			width: 100%;
+			height: 1700px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/*to make flex boxes*/
+		.flex1
+		{
+			background-color: transparent;
+			display: flex;
+			flex-wrap: nowrap;
+			line-height: 1000px;
+		}
+		/* style for div inside flex boxes*/
+		.flex1 > div
+		{
+			background-color: #fff;
+			width: 50%;
+			color: #fff;
+			text-align: left;
+			line-height: 50px;
+			font-size: 25px;
+			margin-top: 200px;
+			margin-right: 20px;
+			margin-left: 50px;
+			padding-left: 5px;
+			box-shadow: #000000 3px 3px 20px;
+		}
+		img
+		{
+			max-width: 300px;
+			height: 250px;
+			border-radius: 50%;
+			box-shadow: #000000 4px 4px 4px 0.3px;
+		}
+		.para1
+		{
+			width:100%; 
+			padding-top: 15px; 
+			padding-left: 45px; 
+			padding-right: 0px; 
+			text-align: justify; 
+			color: #000000; 
+			font-family: verdana; 
+			font-size: 15px; 
+			line-height: 25px;
+		}
+		.table1
+		{
+			width: 600px; 
+			height: 400px; 
+			font-size: 13px; 
+			color: #000000;
+			font-family: verdana; 
+			border-collapse: collapse; 
+			text-align: left; 
+			border: 2px solid #ddd; 
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!--for wrapper class-->
+	<div style="max-width: 100%; height: 600px;">
+		<header style=" background-color: #c0c6c8; width: 100%; height: 45px; position: fixed; z-index: 1;">
+			<!--for navigation bar-->
+			<nav class="navi">
+				<table style="width: 95%; margin: 0px;">
+					<tr>
+						<th>
+							<a href="../index.html">Home</a>
+						</th>
+						<th>
+							<a style="color: #848484" href="cv.html">CV</a>
+						</th>
+						<th>
+							<a href="blog.html">Blog</a>
+						</th>
+						<th> 
+							<a href="research.html">Research</a>
+						</th>
+						<th>
+							<a href="contact.html">Contact Us</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		</header>
+		<div class="bg">
+			<div style="width: 100%; height: 100%; z-index: 0;">
+				<div class="flex1">
+					<div style="width: 20%; height: 400px; margin-left: 200px; margin-right: 5px; background-color: #cce3f3;">
+						<div style="width: 100%; height: 250px; margin-left: 50px; margin-top: 18px;"><img src="../images/BinayDaiHero.jpg" alt="CV holders picture">
+						</div>
+						<h3 style="padding-left: 25px; color: #000000; font-family: verdana;">Nawaraj Kafle</h3>
+						<h5 style="padding-left: 25px; color: #000000; font-family: Courier New;">Student | FreeLancer</h5>
+					</div>
+					<div style="width: 700px; height: 1400px;">
+						<div style="width: 80%; height: 700px;">
+							<h4 style="padding-left:50px; color: #000000; font-family: verdana;">About Me</h4>
+							<p class="para1">
+								<b>Hello, I'm Nawaraj Kafle!</b><br>
+								I am a undergraduate student currently taking Bachelors honours degree in computing at Islington college which is provided by London Metropolitian University. Since first year in highschool I realized programming was the main core inside all these softwares which commands hardware to perform certain task. I was facinated by the work and engineering behind all these. Since then I wanted to be a programmer. My first game that was made using programming was <b> dice game</b>. 
+							</p>
+							<br>
+							<hr style="width: 600px; margin-left: 40px; margin-right: 20px;">
+							<div style="width: 500px; height:200px; margin-left: 40px;">
+								<h6 style="padding-left:20px; color: #717378; font-family: verdana;">Personal Information</h6>
+								<p class="para1">
+									<b>FULL NAME</b> Nawaraj Kafle<br>
+									<b>DATE OF BIRTH</b> 2000 June 15<br>
+									<b>ADDRESS</b> Maitidevi, Kathmandu<br>
+									<b>E-MAIL</b> np01cp4a190018@islington.college.edu.np</a><br>
+									<b>PHONE</b> +977-9821918533
+								</p>
+							</div>
+							<div style="width: 500px; height:175px; margin-left: 40px;">
+								<h6 style="padding-left:20px; color: #717378; font-family: verdana;">Language Proficiency</h6>
+								<p class="para1">
+									<b>Nepali</b> <progress value="75" max="100"> </progress> native<br>
+									<b>Hindi</b> <progress value="65" max="100"></progress> intermidate<br>
+									<b>English</b> <progress value="50" max="100"></progress> intermidate<br>
+								</p>	
+							</div>
+							<div style="width: 500px; height:175px; margin-left: 40px;">
+								<h6 style="padding-left:20px; color: #717378; font-family: verdana;">Skills</h6>
+								<p class="para1">
+									Intermidate knowledge in Java programming language<br>
+									Intermidate knowledge of Webpage designing and development<br>
+									Little knowledge of dataabse management system software i.e. MySQL.<br>
+								</p>	
+							</div>
+							<hr style="width: 600px; margin-left: 40px; margin-right: 20px;">
+							<div style="width: 700px; height:600px; margin-left: 40px;"><br>
+								<h4 style="padding-left:20px; color: #000000; font-family: verdana;">Education Background</h4>
+								<!--table for education background-->
+								<table  border="1" class="table1">
+									<tr>
+										<th>Education</th>
+										<th>Board</th>
+										<th>GPA</th>
+										<th>Institution</th>
+									</tr>
+									<tr>
+										<td>SEE</td>
+										<td>NEB</td>
+										<td>3.35</td>
+										<td>Pearl H.S.S</td>
+									</tr>
+									<tr>
+										<td>+2</td>
+										<td>NEB</td>
+										<td>2.94</td>
+										<td>Tilottama H.S.S</td>
+									</tr>
+									<tr>
+										<td>Bachelor</td>
+										<td>London Metropolitian Unversity</td>
+										<td>Currently Studying</td>
+										<td>Islington College</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!--for footer-->			
+		<footer class="footer">
+			&copy;Nawaraj Kafle | All Rights Reserved. 
+		</footer>
+	</body>
+	</html>

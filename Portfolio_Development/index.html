@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="description" content="Home page for the project"/>
+	<meta name="author" content="Nawaraj Kafle"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<!--thsi script is used to display time-->
+	<script type="text/javascript" src="script/script.js"></script>
+	<!--This is the internal css for this page-->
+	<style>
+		*
+		{
+			margin: 0px;
+		}
+		.parallax 
+		{
+			/* The image used */
+			background-image: url("images/b&w.jpg");
+			min-height: 50%;
+			/*for parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.parallax1
+		{
+			background-image: url("images/b&w.jpg");
+			min-height: 15%;
+			line-height: 100px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		/*to make flex boxes*/
+		.flex-but-ok
+		{
+			background-color: #c1d2e4;
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			line-height: 50px;
+		}
+		/* style for div inside flex boxes*/
+		.flex-but-ok > div
+		{
+			background-color: #ffffff;
+			width: 100%;
+			text-align: left;
+			line-height: 30px;
+			font-size: 25px;
+		}
+		.div1
+		{
+			width: 200px;
+			height: 200px;
+			margin-top: 20px; 
+			margin-bottom: 10px; 
+			margin-left: 10px; 
+			float: left;
+		}
+		img 
+		{
+			width: 200px;
+			height: 200px;
+		}
+		.para
+		{
+			color: #000000;
+			font-family: Verdana;
+			font-size: 20px;
+			margin-left: 250px;
+			text-align: justify;
+			margin-right: 100px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!--for wrapper class-->
+	<div class="wrapper">
+
+		<header class="header">
+			<!--for navigation bar-->
+			<nav class="navi">
+				<table style="width: 95%; margin: 0px;">
+					<tr>
+						<th>
+							<a style="color: #848484;" href="index.html">Home</a>
+						</th>
+						<th>
+							<a href="pages/cv.html">CV</a>
+						</th>
+						<th>
+							<a href="pages/blog.html">Blog</a>
+						</th>
+						<th> 
+							<a href="pages/research.html">Research</a>
+						</th>
+						<th>
+							<a href="pages/contact.html">Contact Us</a>
+						</th>
+					</tr>
+				</table>
+			</nav>
+		</header>
+		<!--parallax will start from here-->
+		<div class="parallax">
+			<div style="width: 100%; height: 100%;text-align: center;">
+				<h1 style="color: #3a3535; font-size: 70px; font-family: Garamond; padding-top: 7%; padding-left: 1%; padding-right: 50%;">Hello!</h1>
+				<h3 style="color: #3a3535; font-size: 50px; font-family: Garamond; padding-top: -5%; padding-left: -25%; padding-right: 5%;">
+					welcome to my page.
+				</h3>
+				<p style="color: #ffffff; font-size: 40px; text-align: center; font-family: Garamond; margin-left: 100px; margin-right: 100px; margin-top: 250px; line-height: 100px;">
+					Want to explore this website?<br>
+					Scroll down to see summary of the contents in this website.
+				</p>
+			</div>
+		</div>
+		<div class="flex-but-ok">
+			<div onclick=window.location.href='pages/cv.html'>
+				<div class="div1"><img src="images/portfolio.png"></div>
+				<p class="para"> 
+					<b>CV and Portfolio</b><br>
+					Hello! From Nawaraj Kafle. He is undergraduate student currently taking Bachelors honours degree in computing at Islington college which is provided by London Metropolitian University. He realized programming was the main core inside all these softwares which commands hardware to perform certain task. He was facinated by the work and engineering behind all these. He also made a game which was simple using programming languag. <br><br>
+					<b>Click this box to read more about Nawaraj Kafle.</b>
+				</p>
+			</div>
+		</div>
+		<div class="parallax1"></div>
+		<div class="flex-but-ok">
+			<div onclick=window.location.href='pages/blog.html'>
+				<div class="div1"><img src="images/blog.png"></div>
+				<p class="para">
+					<b>Blog Section</b><br>
+					Internet is the outstanding invention of the modern day. Considering impacts of the internet to the people can be both be positive nad negative. Internet should be managed for the overall benifit of the mankind. The concerns regarding internet should be taken serious. There should be advance cyber security for the protection of one's data and privacy.<br><br>
+					<b>Click this box to read more about internet technology.</b>
+				</p>
+			</div>
+		</div>
+		<div class="parallax1"></div>
+		<div class="flex-but-ok">
+			<div onclick=window.location.href='pages/research.html'>
+				<div class="div1"><img src="images/research.png" style="max-width: 300px; height: 200px;"></div>
+				<p class="para">
+					<b>Research Section</b><br>
+					In this page, website is compared with other well built website. The similarity and diffrence between specific element of the web pages are compared with this website which will contrast how people can inspired from other websites and modify them with their need and preferences.<br><br><br>
+					<b>Click this box to see some research done for this website.</b>
+				</p>
+			</div>
+		</div>
+		<div class="parallax1"></div>
+		<div class="flex-but-ok">
+			<div onclick=window.location.href='pages/contact.html'>
+				<div class="div1"><img src="images/contact us.png"></div>
+				<p class="para">
+					<b>Contact US</b>
+					Your feedback is precesious for us. So, stop by the contact us page to give us some feedback. You can also find the link to the social medias where you can directly contact us. Else you can also visit the place using directions on google map.
+					<br><br><br><br>
+					<b>Click this box to give us some feedback or to reach us.</b>	
+				</p>
+			</div>
+		</div>
+		<div class="parallax1"></div>
+	</div>
+	<!--for footer-->
+	<footer class="footer">
+		&copy;Nawaraj Kafle | All Rights Reserved.
+		<p id="clock" style="color: #fff; float: right; margin-right: 30px;"></p>
+	</footer>
+</body>
+</html>
