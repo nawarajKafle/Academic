@@ -1,0 +1,48 @@
+<!-- For musicstore element -->
+<!ELEMENT musicStore (storeDetails, musicDetails, storeFooter)>
+
+<!-- declaring attribute of schema -->
+<!ATTLIST musicStore xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST musicStore xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!-- for element storeDetails and its child elements -->
+<!ELEMENT storeDetails (storeLogo, storeName, storeOwner, storePhoneNumber+, establishedDate, storeAddress, storeUrl)>
+<!ELEMENT storeLogo EMPTY>
+<!ELEMENT storeName (#PCDATA)>
+<!ELEMENT storeOwner (#PCDATA)>
+<!ELEMENT storePhoneNumber (#PCDATA)>
+<!ELEMENT establishedDate (#PCDATA)>
+<!ELEMENT storeAddress (#PCDATA)>
+<!ELEMENT storeUrl (#PCDATA)>
+
+<!-- for attribute of storPhoneNumber element -->
+<!-- enumarated list for phoneType attribute -->
+<!ATTLIST storePhoneNumber phoneType (mobile | landline) #IMPLIED>
+
+<!-- for element musicDetails and its child element  -->
+<!ELEMENT musicDetails (song+)>
+<!ELEMENT song (musicCover, songName, artist+, genre+, releaseYear, recordLabel?, price, writer+, producers?, composer?, director?, studio?)>
+<!ELEMENT musicCover EMPTY>
+<!ELEMENT songName (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT releaseYear (#PCDATA)>
+<!ELEMENT recordLabel (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT writer (#PCDATA)>
+<!ELEMENT producers (producer+)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT composer (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT studio (#PCDATA)>
+
+<!-- length attribute type is NMTOKEN  -->
+<!ATTLIST song length NMTOKEN "00:00:00" songID ID #REQUIRED>
+<!-- coverId is refrenced form songID -->
+<!ATTLIST musicCover coverID IDREF #IMPLIED>
+<!-- enumarated list for artist attribute -->
+<!ATTLIST artist artistType (main | feature | band) #IMPLIED>
+
+<!-- for storeFooter element -->
+<!ELEMENT storeFooter (#PCDATA)>
+

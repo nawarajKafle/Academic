@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="musicStore">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="storeDetails"/>
+				<xs:element ref="musicDetails"/>
+				<xs:element ref="storeFooter"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- storeDetails reference - child element of musicStore element -->
+	<xs:element name="storeDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="storeLogo"/>
+				<xs:element ref="storeName"/>
+				<xs:element ref="storeOwner"/>
+				<xs:element ref="storePhoneNumber" minOccurs="1" maxOccurs="2"/>
+				<xs:element ref="establishedDate"/>
+				<xs:element ref="storeAddress"/>
+				<xs:element ref="storeUrl"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- storeLogo reference - child element of storeDetails element -->
+	<xs:element name="storeLogo">
+	 	<xs:simpleType>
+	   		<xs:restriction base="xs:string">
+	   			<xs:length value="0"/>
+	   		</xs:restriction>
+	 	</xs:simpleType>
+	</xs:element>
+
+	 <xs:element name="storeName" type="xs:string"/>
+	 <xs:element name="storeOwner" type="xs:string"/>
+	 <!-- storePhoneNumber reference - child element of storeDetails element-->
+	<xs:element name="storePhoneNumber">
+        <xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+
+					<!-- using restriction and enumeration list -->
+					<xs:attribute ref="phoneType"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+    </xs:element>
+
+    <xs:attribute name="phoneType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="mobile"/>
+				<xs:enumeration value="landline"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+	<xs:element name="establishedDate" type="xs:date"/>
+	<xs:element name="storeAddress" type="xs:string"/>
+	<xs:element name="storeUrl" type="xs:string"/>
+
+	<!-- musicDetails reference - child element of musicStore element -->
+	<xs:element name="musicDetails">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="song" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- song reference - child element of musicDetails element -->
+	<!-- song element can occur multiple times -->
+	<xs:element name="song">
+        <xs:complexType>
+            <xs:sequence>
+				<xs:element ref="musicCover"/>
+				<xs:element ref="songName"/>
+				<xs:element ref="artist" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="genre" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="releaseYear"/>
+				<xs:element ref="recordLabel" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="price"/>
+				<xs:element ref="writer" minOccurs="1" maxOccurs="unbounded"/>
+				<xs:element ref="producers" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="composer" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="director" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="studio" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+
+			<xs:attribute ref="length"/>
+			<!-- defining ID datatype on  songID attribute -->
+			<xs:attribute ref="songID" use="required"/>
+		</xs:complexType>
+    </xs:element>
+
+    <!-- attributes of song element -->
+    <xs:attribute name="length" type="xs:NMTOKEN" default="00:00:00"/>
+    <xs:attribute name="songID" type="xs:ID"/>
+
+	<!--  child elements of song element -->
+    <xs:element name="musicCover">
+  		<xs:complexType>
+    		<xs:attribute name="coverID" type="xs:IDREF"/>
+  		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="songName" type="xs:string"/>
+	<xs:element name="artist">
+        <xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute ref="artistType"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+    </xs:element>
+
+    <!-- attributes of song element -->
+    <xs:attribute name="artistType">
+    	<xs:simpleType>
+	    	<xs:restriction base="xs:string">
+				<xs:enumeration value="main"/>
+				<xs:enumeration value="feature"/>
+				<xs:enumeration value="band"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+
+    <xs:element name="genre" type="xs:string"/>
+    <xs:element name="releaseYear" type="xs:string"/>
+    <xs:element name="recordLabel" type="xs:string"/>
+
+    <!-- price must be in USD and can only have 2 digits after decimal eg: $17.0.
+    declaring a regrex to make it. -->
+    <xs:element name="price">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[$][0-9]+\.[0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+    <xs:element name="writer" type="xs:string"/>
+    <xs:element name="producers">
+    	<xs:complexType>
+    		<xs:sequence>
+    			<xs:element ref="producer" minOccurs="1" maxOccurs="unbounded"/>
+    		</xs:sequence>
+    	</xs:complexType>
+    </xs:element>
+    <xs:element name="composer" type="xs:string"/>
+    <xs:element name="director" type="xs:string"/>
+    <xs:element name="studio" type="xs:string"/>
+
+    <!-- producer reference - child element of musicStore producers -->
+   <xs:element name="producer" type="xs:string"/>
+    
+
+
+    <!-- storeFooter reference - child element of musicStore element -->
+    <xs:element name="storeFooter" type="xs:string"/>
+</xs:schema>
+
+
+
+
+	 
+

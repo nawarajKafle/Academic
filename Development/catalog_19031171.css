@@ -1,0 +1,329 @@
+musicStore {
+    background-color: rgb(255, 121, 205);
+    width: auto;
+}
+/* styling store logo */
+storeLogo {
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    background-image: url(photos/rawmusic.png);
+    justify-content: left;
+    width: 250px;
+    height: 250px;
+    animation-name: logoAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+/* animation for logo */
+@keyframes logoAnimation {
+    0% {
+        opacity: 100%;
+    }
+    10% {
+        opacity: 0%;
+    }
+}
+/* styling all the elements of StoreDetails individually */
+storeDetails {
+    display: block;
+    background-image: url(photos/loop.gif);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+    height: 560px;
+}
+
+storeName {
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    left: 220px;
+    width: 1000px;
+    height: 60px;
+    color: rgb(255, 230, 230);
+    font-family: cursive;
+    font-size: 70pt;
+
+}
+
+storeOwner, storePhoneNumber, establishedDate, storeAddress, storeUrl {
+    display: list-item;
+    list-style: none;
+}
+
+storeOwner {
+    position: relative;
+    left: 338px;
+    bottom: 100px;
+    width: 200px;
+    height: 20px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+storePhoneNumber[phoneType="mobile"] {
+    position: relative;
+    left: 1080px;
+    bottom: 100px;
+    width: 100px;
+    height: 20px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+storePhoneNumber[phoneType="landline"] {
+    position: relative;
+    left: 989px;
+    bottom: 50px;
+    width: 100px;
+    height: 20px;
+    padding-left: 100px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+establishedDate {
+    position: relative;
+    left: 324px;
+    bottom: 50px;
+    width: 150px;
+    height: 20px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+
+}
+
+storeAddress {
+    position: relative;
+    left: 608px;
+    bottom: 100px;
+    width: 290px;
+    height: 20px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+
+}
+
+storeUrl {
+    position: relative;
+    left: 645px;
+    bottom: 50px;
+    width: 200px;
+    height: 20px;
+    color: rgb(255, 230, 230);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+
+}
+/* Flex for music Details */
+musicDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12pt;
+    width: 100%;
+}
+
+song {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 206, 245);
+    width: 27%;
+    border: 20px;
+    font-size: 12pt;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0) 3px 3px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 90px;
+    transition: 0.3s;
+    
+}
+
+song:hover {
+    background-color: rgb(211, 141, 218);
+    box-shadow: rgb(0, 0, 0) 25px 25px 25px;
+    transition: 0.6s;
+}
+
+song[songID="m1"]{
+    margin-top: 245px;
+}
+song[songID="m2"]{
+    margin-top: 245px;
+}
+/* styling the hover effect in song */
+song[songID="m1"]:hover {
+    background-color: rgb(211, 141, 218);
+    box-shadow: rgb(0, 0, 0) 25px 25px 25px;
+    transition: 0.6s;
+}
+
+song[songID="m2"]:hover {
+    background-color: rgb(211, 141, 218);
+    box-shadow: rgb(0, 0, 0) 25px 25px 25px;
+    transition: 0.6s;
+}
+
+songName {
+    font-size: 15pt;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+genre {
+    display: contents;
+    width: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+/* styling a group of tags at once */
+songName, artist, releaseYear, recordLabel, price, writer, producer, composer, director, studio {
+    display: flex;
+    flex-direction: column;
+    width: 93.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 2px;
+}
+
+writer {
+    display: contents;
+
+}
+producer {
+    display: contents;
+}
+composer {
+    display: flex;
+    flex-direction: column;
+}
+director {
+    display: flex;
+    flex-direction: column;
+}
+studio {
+    display: flex;
+    flex-direction: column;
+}
+
+/* each of the attribute coverID is used to individually set the musicCover */
+
+musicCover[coverID="m1"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/nevergonnagiveyouup.png);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+musicCover[coverID="m2"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/howtobeahumanbeing.jpg);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+musicCover[coverID="m3"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/fire.jpg);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+musicCover[coverID="m4"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/latelyep.jfif);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+musicCover[coverID="m5"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/thelumineers.jfif);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+musicCover[coverID="m6"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/levitating.png);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+musicCover[coverID="m7"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/graz.jfif);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+musicCover[coverID="m8"] {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(photos/therewrittenmemories.jfif);
+    justify-content: left;
+    margin-top: 5px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+
+}
+
+/* css for storeFooter */
+storeFooter {
+	width: auto;
+	height: 12px;
+	margin-left: 600px;
+    padding-bottom: 5px;
+	border: 10px;
+	color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}

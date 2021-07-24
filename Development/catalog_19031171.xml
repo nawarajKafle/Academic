@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- declaring CSS for this XML document -->
+<?xml-stylesheet type="text/css" href="catalog_19031171.css"?>
+
+<!-- declaring the dtd file catalog_19031171.dtd in this xml document-->
+
+<!DOCTYPE musicStore SYSTEM "catalog_19031171.dtd"[
+<!ENTITY amp "&#38;">
+<!ENTITY copy "&#xA9;">
+]>
+
+
+<!-- declaring the schema file catalog_19031171.xsd in the xml -->
+<musicStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+			xsi:noNamespaceSchemaLocation="catalog_19031171.xsd">
+	<!-- storeDetails - child element of musicStore root element -->
+	<storeDetails>
+		<storeLogo/>
+		<storeName>RAW MUSIC</storeName>
+		<storeOwner>John Doe</storeOwner>
+		<storePhoneNumber phoneType="mobile">9821918533</storePhoneNumber>
+		<storePhoneNumber phoneType="landline">01-523476</storePhoneNumber>
+		<establishedDate>2017-03-12</establishedDate>
+		<storeAddress>Maitidevi 33, Kathmandu, Nepal</storeAddress>
+		<storeUrl>www.rawmusic.com.np</storeUrl>
+	</storeDetails>
+
+	<!-- musicDetails - child element of musicStore root element -->
+	<!-- song - child element of musicStore element occurs multiple times -->
+	<musicDetails>
+		<song length="00:03:35" songID="m1">
+			<musicCover coverID="m1"/>
+			<songName>Never Gonna Give You Up</songName>
+			<artist artistType="main">Rick Astley</artist>
+			<genre>Dance-Pop</genre>
+			<releaseYear>1987</releaseYear>
+			<recordLabel>RCA</recordLabel>
+			<price>$8.99</price>
+			<writer>Writer: Stock Atiken Waterman</writer>
+			<!-- producers element has its child element i.e., producer element -->
+			<producers>
+				<producer>Producer: Stock Atiken Waterman</producer>
+			</producers>
+			<studio>Studio: Pete Waterman Entertainment</studio>
+		</song>
+		
+		<song length="00:04:41" songID="m2">
+			<musicCover coverID="m2"/>
+			<songName>Life Itself</songName>
+			<artist artistType="band">Glass Animals</artist>
+			<genre>Art Pop, </genre>
+			<genre>Alternative R &amp; B</genre>
+			<releaseYear>2016</releaseYear>
+			<recordLabel>Harvest Records</recordLabel>
+			<price>$8.99</price>
+			<writer>Writer: David Bayley,</writer>
+			<writer>Tariq Tafo</writer>
+			<producers>
+				<producer>Producer: David Bayley</producer>
+			</producers>
+		</song>
+
+		<song length="00:03:33" songID="m3">
+			<musicCover coverID="m3"/>
+			<songName>Fire</songName>
+			<artist artistType="band">Two Feet</artist>
+			<genre>Alternative</genre>
+			<releaseYear>2021</releaseYear>
+			<recordLabel>AWAL Recordings</recordLabel>
+			<price>$0.73</price>
+			<writer>Writer: Zachary William Dess</writer>
+			<producers>
+				<producer>Producer: Two Feet,</producer>
+				<producer>Andrew Luce</producer>
+			</producers>	
+		</song>
+
+		<song songID="m4">
+			<musicCover coverID="m4"/>
+			<songName>Habit</songName>
+			<artist artistType="main">Still Woozy</artist>
+			<genre>Indie Pop,</genre>
+			<genre>neo Soul</genre>
+			<releaseYear>2019</releaseYear>
+			<recordLabel>Interscope Records</recordLabel>
+			<price>$5.55</price>
+			<writer>Writer: Sven Eric Gamsky,</writer>
+			<writer>Malik T. Keith</writer>
+			<producers>
+				<producer>Producer: Still Woozy,</producer>
+				<producer>Lage Kale</producer>
+			</producers>
+			<studio>Studio: The Place</studio>
+		</song>
+
+		<song length="00:01:49" songID="m5">
+			<musicCover coverID="m5"/>
+			<songName>Flowers in Your Hair</songName>
+			<artist artistType="band">The Lumineers</artist>
+			<genre>Folk rock</genre>
+			<releaseYear>2012</releaseYear>
+			<recordLabel>Dualtone</recordLabel>
+			<price>$5.55</price>
+			<writer>Writer: Wesley Schultz,</writer>
+			<writer>Jeremiah Fraites</writer>
+			<producers>
+				<producer>Producer: Ryan Hadlock</producer>
+			</producers>
+			<studio>Studio: Fairfax Recordings</studio>
+		</song>
+
+		<song length="00:03:41" songID="m6">
+			<musicCover coverID="m6"/>
+			<songName>Levitating</songName>
+			<artist artistType="main">Dua Lipa</artist>
+			<artist artistType="feature">with DaBaby</artist>
+			<genre>Pop</genre>
+			<releaseYear>2021</releaseYear>
+			<recordLabel>Harvest Records</recordLabel>
+			<price>$8.99</price>
+			<writer>Writer: Dua Lipa,</writer>
+			<writer>Sarah Hudson,</writer>
+			<writer>DaBaby</writer>
+			<producers>
+				<producer>Producer: Stephen Kozmeniuk,</producer>
+				<producer>Stuart Price</producer>
+			</producers>
+			<studio>Studio: Sarm Recordings</studio>
+		</song>
+
+		<song length="00:03:49" songID="m7">
+			<musicCover coverID="m7"/>
+			<songName>Lighter</songName>
+			<artist artistType="main">Nils Frahm</artist>
+			<genre>Classical</genre>
+			<releaseYear>2021</releaseYear>
+			<price>$16.77</price>
+			<writer>Writer: Nils Frahm</writer>
+			<composer>Composer: Joseph Hyden</composer>
+			<director>Director: Leonard Bernstein</director>	
+		</song>
+
+		<song length="00:04:45" songID="m8">
+			<musicCover coverID="m8"/>
+			<songName>Kiss The Rain - Orchestra Version</songName>
+			<artist artistType="main">Yiruma</artist>
+			<genre>Classical</genre>
+			<releaseYear>2021</releaseYear>
+			<price>$17.00</price>
+			<writer>Writer: Yiruma</writer>
+			<composer>Composer: Jonh Cage</composer>
+			<director>Director: John Willams</director>
+		</song>			
+	</musicDetails>
+
+	<!-- storeFooter - child element of musicStore root element -->
+	<storeFooter>&copy;2020 by Raw music | All rights reserved</storeFooter>
+</musicStore>
